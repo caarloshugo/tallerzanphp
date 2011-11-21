@@ -85,4 +85,9 @@ class Aldeanos_Model extends ZP_Model {
 			return getAlert("Edit error");
 		}
 	}
+	
+	public function all() {
+		$this->Db->table($this->table);
+		return $this->Db->findAll();
+	}
 }

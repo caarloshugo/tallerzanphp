@@ -18,7 +18,15 @@ class Cpanel_Controller extends ZP_Controller {
 	}
 	
 	public function index() {
-		die("Hola soy los resultados");
+		$vars["data"] = $this->Aldeanos_Model->all();
+		
+		if(!$vars["data"]) {
+			redirect("aldeanos/cpanel/add");
+		}
+		
+		$vars["legend"] = __("Aldeanos");
+		$vars["view"]   = $this->view("aldeanos", TRUE);
+		$this->template("content", $vars);
 	}
 	
 	public function add() {
