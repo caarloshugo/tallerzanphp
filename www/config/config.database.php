@@ -37,7 +37,7 @@ if($production) {
 	define("_dbPwd", "");
 	define("_dbName", "zan_taller");
 	define("_dbPort", "3306");
-	define("_dbPfx", "zan_");
+	define("_dbPfx", "");
 	define("_dbSocket", NULL);
 	
 	//NoSQL Settings

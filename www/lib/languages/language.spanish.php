@@ -17,6 +17,7 @@ function translation($text) {
 		case "Hello World!": return "Hola Mundo c&oacute;mo estas!"; break;
 		case "Goodbye Cruel World!": return "Adiós Mundo Cruel!"; break;
 		case "The contact has been edited correctly": return "El contacto ha sido editado correctamente"; break;
+		case "Save": return "Guardar"; break;
 	}
 	
 	return $text;
